@@ -1,0 +1,1 @@
+var e=[],t=new Set,n=performance.now();function r(r){let i=((performance.now()-n)/1e3).toFixed(2).padStart(7);e.push(`${i}  ${r}`),e.length>200&&e.shift(),t.forEach(e=>e())}function i(){return e}function a(){e.length=0,t.forEach(e=>e())}function o(e){return t.add(e),()=>t.delete(e)}export{o as i,r as n,i as r,a as t};
